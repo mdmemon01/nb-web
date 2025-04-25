@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroBytes - Transform Ideas into Reality</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-['Inter'] bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2">
+                <i class="fas fa-brain text-blue-400 text-2xl"></i>
+                <span class="text-white font-bold text-xl">NeuroBytes </span>
+            </a>
+            <!-- Nav Links -->
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                <a href="#services" class="text-gray-300 hover:text-white transition">Services</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-white transition">Portfolio</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (optional) -->
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section (with ID for navbar link) -->
+    <section id="home" class="relative text-white pt-32 pb-32 px-4 md:px-8 overflow-hidden">
+        <!-- Animated Background Circles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-96 h-96 bg-purple-500/10 rounded-full -top-48 -left-48 animate-pulse"></div>
+            <div class="absolute w-96 h-96 bg-blue-500/10 rounded-full -bottom-48 -right-48 animate-pulse"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <!-- Headline with Typewriter Effect -->
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Transform Ideas Into Reality with <br>
+                <span id="typewriter" class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400"></span>
+                <span class="cursor">|</span>
+            </h1>
+
+            <!-- Subtext -->
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Empowering businesses through cutting-edge tech solutions in AI, IoT, and software development.
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Schedule Free Consultation
+                </a>
+                <a href="#services" class="border border-blue-600 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                    Explore Solutions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section id="services" class="py-20 px-4 md:px-8 bg-gray-900/50">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Our <span class="text-blue-400">Solutions</span>
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Cutting-edge technologies tailored to your business needs.
+        </p>
+      </div>
+  
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1: IoT -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-blue-400 transition-all duration-300 group">
+          <div class="text-blue-400 mb-4 text-4xl">
+            <i class="fas fa-satellite-dish"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">IoT Solutions</h3>
+          <p class="text-gray-300 mb-4">
+            Smart devices for homes, healthcare, and industrial automation.
+          </p>
+          <a href="#contact" class="text-blue-400 hover:text-blue-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+  
+        <!-- Service Card 2: AI -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-purple-400 transition-all duration-300 group">
+          <div class="text-purple-400 mb-4 text-4xl">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">AI & Machine Learning</h3>
+          <p class="text-gray-300 mb-4">
+            Predictive analytics, NLP, and automation for smarter decisions.
+          </p>
+          <a href="#contact" class="text-purple-400 hover:text-purple-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+  
+        <!-- Service Card 3: Web/Mobile -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-green-400 transition-all duration-300 group">
+          <div class="text-green-400 mb-4 text-4xl">
+            <i class="fas fa-mobile-screen"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Web & Mobile Apps</h3>
+          <p class="text-gray-300 mb-4">
+            Seamless, user-centric applications for all platforms.
+          </p>
+          <a href="#contact" class="text-green-400 hover:text-green-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+  
+        <!-- Add 3 more cards (Cybersecurity, AR/VR, Cloud) -->
+        <!-- Card 4: Cybersecurity -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-red-400 transition-all duration-300 group">
+          <div class="text-red-400 mb-4 text-4xl">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Cybersecurity</h3>
+          <p class="text-gray-300 mb-4">
+            End-to-end protection for your digital assets.
+          </p>
+          <a href="#contact" class="text-red-400 hover:text-red-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+  
+        <!-- Card 5: AR/VR -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-yellow-400 transition-all duration-300 group">
+          <div class="text-yellow-400 mb-4 text-4xl">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">AR/VR Development</h3>
+          <p class="text-gray-300 mb-4">
+            Immersive experiences for training, gaming, and business.
+          </p>
+          <a href="#contact" class="text-yellow-400 hover:text-yellow-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+  
+        <!-- Card 6: Cloud -->
+        <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-xl p-8 border border-gray-700 hover:border-cyan-400 transition-all duration-300 group">
+          <div class="text-cyan-400 mb-4 text-4xl">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Cloud Services</h3>
+          <p class="text-gray-300 mb-4">
+            Scalable infrastructure and secure data management.
+          </p>
+          <a href="#contact" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+            Learn more <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="py-20 px-4 md:px-8 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Our <span class="text-blue-400">Work</span>
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Real-world solutions delivering measurable impact.
+        </p>
+      </div>
+  
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button class="filter-btn active px-4 py-2 rounded-full bg-blue-600 text-white" data-filter="all">
+          All
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white" data-filter="iot">
+          IoT
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white" data-filter="ai">
+          AI
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white" data-filter="web">
+          Web/Mobile
+        </button>
+      </div>
+  
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: IoT -->
+        <div class="portfolio-item" data-category="iot">
+          <div class="bg-gray-800 rounded-xl overflow-hidden group">
+            <div class="relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                alt="IoT Smart Factory" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+              >
+              <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            </div>
+            <div class="p-6">
+              <span class="inline-block px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm mb-2">
+                IoT
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">Smart Factory System</h3>
+              <p class="text-gray-300 mb-4">
+                Automated industrial monitoring reducing downtime by 40%.
+              </p>
+              <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center gap-2">
+                View Case Study <i class="fas fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2: AI -->
+        <div class="portfolio-item" data-category="ai">
+          <div class="bg-gray-800 rounded-xl overflow-hidden group">
+            <div class="relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                alt="AI Healthcare" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+              >
+              <div class="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            </div>
+            <div class="p-6">
+              <span class="inline-block px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm mb-2">
+                AI
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">Healthcare Diagnostics AI</h3>
+              <p class="text-gray-300 mb-4">
+                Machine learning model with 95% accuracy in early disease detection.
+              </p>
+              <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center gap-2">
+                View Case Study <i class="fas fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3: Web -->
+        <div class="portfolio-item" data-category="web">
+          <div class="bg-gray-800 rounded-xl overflow-hidden group">
+            <div class="relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                alt="E-commerce App" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+              >
+              <div class="absolute inset-0 bg-green-600/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            </div>
+            <div class="p-6">
+              <span class="inline-block px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm mb-2">
+                Web/Mobile
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">E-Commerce Platform</h3>
+              <p class="text-gray-300 mb-4">
+                Scalable React/Node.js solution boosting sales by 120%.
+              </p>
+              <a href="#" class="text-green-400 hover:text-green-300 flex items-center gap-2">
+                View Case Study <i class="fas fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+<section class="py-20 px-4 md:px-8 bg-gray-900/50 overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Our <span class="text-blue-400">Tech Stack</span>
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          We leverage cutting-edge tools to build robust, scalable solutions.
+        </p>
+      </div>
+  
+      <!-- Slider Container (Wrapper to center the sliding cards) -->
+      <div class="relative overflow-x-hidden py-4">
+        <!-- Sliding Cards (First Row) -->
+        <div class="flex gap-6 animate-slide-left mb-6 w-[200%]">
+          <!-- Card 1 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-blue-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
+            <h3 class="text-white font-semibold">React</h3>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-green-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-node-js text-4xl text-green-400 mb-3"></i>
+            <h3 class="text-white font-semibold">Node.js</h3>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-blue-500 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-python text-4xl text-blue-500 mb-3"></i>
+            <h3 class="text-white font-semibold">Python</h3>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-red-500 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-laravel text-4xl text-red-500 mb-3"></i>
+            <h3 class="text-white font-semibold">Laravel</h3>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-cyan-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-vuejs text-4xl text-cyan-400 mb-3"></i>
+            <h3 class="text-white font-semibold">Vue.js</h3>
+          </div>
+          <!-- Duplicate cards for seamless loop -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-blue-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
+            <h3 class="text-white font-semibold">React</h3>
+          </div>
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-green-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-node-js text-4xl text-green-400 mb-3"></i>
+            <h3 class="text-white font-semibold">Node.js</h3>
+          </div>
+        </div>
+  
+        <!-- Sliding Cards (Second Row) -->
+        <div class="flex gap-6 animate-slide-right w-[200%]">
+          <!-- Card 1 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-brain text-4xl text-yellow-400 mb-3"></i>
+            <h3 class="text-white font-semibold">TensorFlow</h3>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-emerald-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-database text-4xl text-emerald-400 mb-3"></i>
+            <h3 class="text-white font-semibold">Django</h3>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-red-600 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fab fa-aws text-4xl text-red-600 mb-3"></i>
+            <h3 class="text-white font-semibold">AWS</h3>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-pink-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-robot text-4xl text-pink-400 mb-3"></i>
+            <h3 class="text-white font-semibold">PyTorch</h3>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-red-300 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-fire text-4xl text-red-300 mb-3"></i>
+            <h3 class="text-white font-semibold">FastAPI</h3>
+          </div>
+          <!-- Duplicate cards for seamless loop -->
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-brain text-4xl text-yellow-400 mb-3"></i>
+            <h3 class="text-white font-semibold">TensorFlow</h3>
+          </div>
+          <div class="bg-gray-800/50 hover:bg-gray-800/80 rounded-lg p-6 text-center border border-gray-700 hover:border-emerald-400 transition-all duration-300 w-48 flex-shrink-0">
+            <i class="fas fa-database text-4xl text-emerald-400 mb-3"></i>
+            <h3 class="text-white font-semibold">Django</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Animation */
+    @keyframes slide-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes slide-right {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+    .animate-slide-left {
+      animation: slide-left 20s linear infinite;
+    }
+    .animate-slide-right {
+      animation: slide-right 20s linear infinite;
+    }
+  </style>
+
+  <!-- Process Section -->
+<section class="py-20 px-4 md:px-8 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Our <span class="text-blue-400">Victory Process</span>
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Agile, intentional, and relentlessly focused on impact.
+        </p>
+      </div>
+  
+      <!-- Vertical Timeline -->
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-600 hidden md:block"></div>
+  
+        <!-- Process Steps -->
+        <div class="space-y-12 md:space-y-0">
+          <!-- Step 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="md:order-1 md:w-1/2 md:pl-12">
+              <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 group-hover:border-blue-400 transition-all duration-300">
+                <span class="inline-block px-4 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm mb-3">01</span>
+                <h3 class="text-xl font-bold text-white mb-3">Discover & Connect</h3>
+                <p class="text-gray-300">
+                  We dive deep into your goals, challenges, and vision—because every great solution starts with understanding.
+                </p>
+              </div>
+            </div>
+            <div class="md:order-2 md:w-1/2 flex justify-center">
+              <div class="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center border-4 border-gray-900 z-10">
+                <i class="fas fa-search text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 2 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="md:order-2 md:w-1/2 md:pr-12">
+              <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 group-hover:border-purple-400 transition-all duration-300">
+                <span class="inline-block px-4 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm mb-3">02</span>
+                <h3 class="text-xl font-bold text-white mb-3">Strategize & Architect</h3>
+                <p class="text-gray-300">
+                  We map out a smart, scalable structure—designing with purpose and planning for performance.
+                </p>
+              </div>
+            </div>
+            <div class="md:order-1 md:w-1/2 flex justify-center">
+              <div class="w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center border-4 border-gray-900 z-10">
+                <i class="fas fa-chess text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 3 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="md:order-1 md:w-1/2 md:pl-12">
+              <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 group-hover:border-green-400 transition-all duration-300">
+                <span class="inline-block px-4 py-1 bg-green-600/20 text-green-400 rounded-full text-sm mb-3">03</span>
+                <h3 class="text-xl font-bold text-white mb-3">Build & Refine</h3>
+                <p class="text-gray-300">
+                  From code to content, we craft with precision. Rigorous testing ensures seamless functionality.
+                </p>
+              </div>
+            </div>
+            <div class="md:order-2 md:w-1/2 flex justify-center">
+              <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center border-4 border-gray-900 z-10">
+                <i class="fas fa-code text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 4 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="md:order-2 md:w-1/2 md:pr-12">
+              <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 group-hover:border-yellow-400 transition-all duration-300">
+                <span class="inline-block px-4 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm mb-3">04</span>
+                <h3 class="text-xl font-bold text-white mb-3">Launch with Confidence</h3>
+                <p class="text-gray-300">
+                  Your site goes live, optimized for success—ready to make waves from day one.
+                </p>
+              </div>
+            </div>
+            <div class="md:order-1 md:w-1/2 flex justify-center">
+              <div class="w-16 h-16 rounded-full bg-yellow-600 flex items-center justify-center border-4 border-gray-900 z-10">
+                <i class="fas fa-rocket text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 5 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="md:order-1 md:w-1/2 md:pl-12">
+              <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 group-hover:border-red-400 transition-all duration-300">
+                <span class="inline-block px-4 py-1 bg-red-600/20 text-red-400 rounded-full text-sm mb-3">05</span>
+                <h3 class="text-xl font-bold text-white mb-3">Monitor & Evolve</h3>
+                <p class="text-gray-300">
+                  We track performance and continuously refine to keep your digital presence ahead.
+                </p>
+              </div>
+            </div>
+            <div class="md:order-2 md:w-1/2 flex justify-center">
+              <div class="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center border-4 border-gray-900 z-10">
+                <i class="fas fa-chart-line text-white text-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Animation for icons */
+    .group:hover .fa-search { transform: rotate(-5deg) scale(1.1); }
+    .group:hover .fa-chess { transform: translateY(-3px); }
+    .group:hover .fa-code { animation: pulse 1s infinite; }
+    .group:hover .fa-rocket { transform: translateY(-5px); }
+    .group:hover .fa-chart-line { animation: bounce 1s infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  </style>
+  
+  <!-- Testimonials Section -->
+<section class="py-16 px-4 md:px-8 bg-gray-900/50">
+  <div class="max-w-4xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white mb-3">
+        What <span class="text-blue-400">Clients Say</span>
+      </h2>
+      <p class="text-gray-300 max-w-lg mx-auto text-sm">
+        Trusted by innovative businesses worldwide
+      </p>
+    </div>
+
+    <!-- Compact Carousel Container -->
+    <div class="relative overflow-hidden h-[300px]">
+      <!-- Carousel Track -->
+      <div class="absolute top-0 left-0 flex gap-6 w-full h-full animate-slide-left">
+        <!-- Testimonial 1 -->
+        <div class="flex-shrink-0 w-[300px]">
+          <div class="bg-gray-800/70 border border-gray-700 rounded-lg p-6 h-full hover:border-blue-400 transition-all">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                   class="w-10 h-10 rounded-full mr-3 object-cover border border-blue-400">
+              <div>
+                <h4 class="text-white font-medium">Sarah K.</h4>
+                <p class="text-blue-400 text-xs">TechNova Inc.</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-3">
+              "NeuroBytes' IoT solutions increased our operational efficiency by 65%. Their team is exceptionally responsive."
+            </p>
+            <div class="flex text-yellow-400 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="flex-shrink-0 w-[300px]">
+          <div class="bg-gray-800/70 border border-gray-700 rounded-lg p-6 h-full hover:border-purple-400 transition-all">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                   class="w-10 h-10 rounded-full mr-3 object-cover border border-purple-400">
+              <div>
+                <h4 class="text-white font-medium">James L.</h4>
+                <p class="text-purple-400 text-xs">FinSecure</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-3">
+              "Their AI security platform prevented 3 potential breaches last quarter. Game-changing protection."
+            </p>
+            <div class="flex text-yellow-400 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="flex-shrink-0 w-[300px]">
+          <div class="bg-gray-800/70 border border-gray-700 rounded-lg p-6 h-full hover:border-green-400 transition-all">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                   class="w-10 h-10 rounded-full mr-3 object-cover border border-green-400">
+              <div>
+                <h4 class="text-white font-medium">Priya M.</h4>
+                <p class="text-green-400 text-xs">HealthVibe</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-3">
+              "Our patient prediction accuracy jumped to 92% with their custom analytics platform. Exceptional work."
+            </p>
+            <div class="flex text-yellow-400 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicates for seamless loop -->
+        <div class="flex-shrink-0 w-[300px]">
+          <div class="bg-gray-800/70 border border-gray-700 rounded-lg p-6 h-full hover:border-blue-400 transition-all">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                   class="w-10 h-10 rounded-full mr-3 object-cover border border-blue-400">
+              <div>
+                <h4 class="text-white font-medium">Sarah K.</h4>
+                <p class="text-blue-400 text-xs">TechNova Inc.</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-3">
+              "NeuroBytes' IoT solutions increased our operational efficiency by 65%. Their team is exceptionally responsive."
+            </p>
+            <div class="flex text-yellow-400 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Animation */
+  @keyframes slide-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 3 - 6rem)); /* 3 cards + gaps */ }
+  }
+  .animate-slide-left {
+    animation: slide-left 20s linear infinite;
+  }
+  /* Pause on hover */
+  .animate-slide-left:hover {
+    animation-play-state: paused;
+  }
+</style>
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-4 md:px-8 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        Get <span class="text-blue-400">In Touch</span>
+      </h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Ready to transform your ideas into reality? Reach out to our team.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 hover:border-blue-400 transition-all duration-300">
+        <h3 class="text-xl font-bold text-white mb-6">Send us a message</h3>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-300 text-sm mb-2">Full Name</label>
+            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Doe">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-300 text-sm mb-2">Email</label>
+            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@company.com">
+          </div>
+          <div>
+            <label for="service" class="block text-gray-300 text-sm mb-2">Service Needed</label>
+            <select id="service" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="">Select a service</option>
+              <option value="iot">IoT Solutions</option>
+              <option value="ai">AI & Machine Learning</option>
+              <option value="web">Web & Mobile Development</option>
+              <option value="ar">AR/VR Development</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-gray-300 text-sm mb-2">Message</label>
+            <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02]">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="space-y-6">
+        <!-- Email Card -->
+        <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-blue-400 transition-all duration-300 flex items-start">
+          <div class="bg-blue-600/20 p-3 rounded-lg mr-4">
+            <i class="fas fa-envelope text-blue-400 text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Email Us</h3>
+            <p class="text-gray-300 mb-2">Get quick responses</p>
+            <a href="mailto:contact@neurobytes.co" class="text-blue-400 hover:text-blue-300">contact@neurobytes.co</a>
+          </div>
+        </div>
+
+        <!-- Call Card -->
+        <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-purple-400 transition-all duration-300 flex items-start">
+          <div class="bg-purple-600/20 p-3 rounded-lg mr-4">
+            <i class="fas fa-phone-alt text-purple-400 text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Call Us</h3>
+            <p class="text-gray-300 mb-2">Mon-Fri, 9AM-5PM</p>
+            <a href="tel:+11234567890" class="text-purple-400 hover:text-purple-300">+1 (123) 456-7890</a>
+          </div>
+        </div>
+
+        <!-- Office Card -->
+        <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-green-400 transition-all duration-300 flex items-start">
+          <div class="bg-green-600/20 p-3 rounded-lg mr-4">
+            <i class="fas fa-map-marker-alt text-green-400 text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Visit Us</h3>
+            <p class="text-gray-300 mb-2">Our headquarters</p>
+            <p class="text-green-400">123 Tech Park, Silicon Valley, CA 94025</p>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-cyan-400 transition-all duration-300">
+          <h3 class="text-lg font-bold text-white mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-blue-600 transition-all">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-blue-400 transition-all">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-pink-600 transition-all">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-gray-800 transition-all">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 border-t border-gray-800 pt-16 pb-8 px-4 md:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- Company Info -->
+      <div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-brain text-blue-400 text-2xl mr-2"></i>
+          <span class="text-white font-bold text-xl">NeuroBytes</span>
+        </div>
+        <p class="text-gray-400 mb-4">
+          Transforming ideas into reality through cutting-edge technology solutions.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-pink-400 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="#home" class="text-gray-400 hover:text-blue-400 transition">Home</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-blue-400 transition">Services</a></li>
+          <li><a href="#portfolio" class="text-gray-400 hover:text-blue-400 transition">Portfolio</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-blue-400 transition">Contact</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Services</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">IoT Development</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">AI Solutions</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Web & Mobile Apps</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">AR/VR Experiences</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Cloud Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Contact Us</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+            <span class="text-gray-400">123 Tech Park, Silicon Valley, CA 94025</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-phone-alt text-blue-400 mt-1 mr-3"></i>
+            <a href="tel:+11234567890" class="text-gray-400 hover:text-blue-400 transition">+1 (123) 456-7890</a>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope text-blue-400 mt-1 mr-3"></i>
+            <a href="mailto:contact@neurobytes.co" class="text-gray-400 hover:text-blue-400 transition">contact@neurobytes.co</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright & Legal -->
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-500 text-sm mb-4 md:mb-0">
+        &copy; 2023 NeuroBytes. All rights reserved.
+      </p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-500 hover:text-blue-400 text-sm transition">Privacy Policy</a>
+        <a href="#" class="text-gray-500 hover:text-blue-400 text-sm transition">Terms of Service</a>
+        <a href="#" class="text-gray-500 hover:text-blue-400 text-sm transition">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- JavaScript -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Advanced Typewriter Effect
+        const typewriter = document.getElementById('typewriter');
+        const cursor = document.querySelector('.cursor');
+        const texts = ["AI", "IoT", "Blockchain", "AR/VR", "Machine Learning"];
+        let index = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100; // Milliseconds
+
+        function typeWriter() {
+            const currentText = texts[index];
+            
+            if (isDeleting) {
+                // Delete text
+                typewriter.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50; // Faster deletion
+            } else {
+                // Type text
+                typewriter.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+
+            // Switch between typing/deleting
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                index = (index + 1) % texts.length;
+                typingSpeed = 500; // Pause at start
+            }
+
+            setTimeout(typeWriter, typingSpeed);
+        }
+
+        // Start the effect
+        setTimeout(typeWriter, 1000);
+
+        // Cursor blink effect
+        setInterval(() => {
+            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+        }, 500);
+
+        // Portfolio Filter
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active', 'bg-blue-600'));
+      button.classList.add('active', 'bg-blue-600');
+
+      // Filter items
+      const filter = button.getAttribute('data-filter');
+      portfolioItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+    </script>
+</body>
+</html> 
